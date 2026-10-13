@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lms>
+    <!-- ======================== -->
+    <!-- STUDENTS                 -->
+    <!-- ======================== -->
+    <students>
+        <student id="S101">
+            <name>Arun Kumar</name>
+            <email>arun@college.edu</email>
+            <password>password123</password>
+            <department>CSE</department>
+            <semester>5</semester>
+        </student>
+        <student id="S102">
+            <name>Priya Sharma</name>
+            <email>priya@college.edu</email>
+            <password>password123</password>
+            <department>CSE</department>
+            <semester>5</semester>
+        </student>
+        <student id="S103">
+            <name>Rahul Verma</name>
+            <email>rahul@college.edu</email>
+            <password>password123</password>
+            <department>CSE</department>
+            <semester>3</semester>
+        </student>
+        <student id="S104">
+            <name>Sneha Patel</name>
+            <email>sneha@college.edu</email>
+            <password>password123</password>
+            <department>ECE</department>
+            <semester>5</semester>
+        </student>
+        <student id="S105">
+            <name>Vikram Singh</name>
+            <email>vikram@college.edu</email>
+            <password>password123</password>
+            <department>CSE</department>
+            <semester>7</semester>
+        </student>
+    </students>
+
+    <!-- ======================== -->
+    <!-- SUBJECTS                 -->
+    <!-- ======================== -->
+    <subjects>
+        <subject id="SUB101">
+            <name>Database Management Systems</name>
+            <code>CS501</code>
+            <department>CSE</department>
+            <semester>5</semester>
+        </subject>
+        <subject id="SUB102">
+            <name>Data Structures and Algorithms</name>
+            <code>CS301</code>
+            <department>CSE</department>
+            <semester>3</semester>
+        </subject>
+        <subject id="SUB103">
+            <name>Operating Systems</name>
+            <code>CS502</code>
+            <department>CSE</department>
+            <semester>5</semester>
+        </subject>
+        <subject id="SUB104">
+            <name>Computer Networks</name>
+            <code>CS601</code>
+            <department>CSE</department>
+            <semester>6</semester>
+        </subject>
+        <subject id="SUB105">
+            <name>Digital Signal Processing</name>
+            <code>EC501</code>
+            <department>ECE</department>
+            <semester>5</semester>
+        </subject>
+    </subjects>
+
+    <!-- ======================== -->
+    <!-- TOPICS                   -->
+    <!-- ======================== -->
+    <topics>
+        <!-- DBMS Topics -->
+        <topic id="T101" subjectId="SUB101">
+            <name>Normalization</name>
+            <description>Database normalization forms - 1NF, 2NF, 3NF, BCNF</description>
+        </topic>
+        <topic id="T102" subjectId="SUB101">
+            <name>ER Model</name>
+            <description>Entity-Relationship diagrams and modeling</description>
+        </topic>
+        <topic id="T103" subjectId="SUB101">
+            <name>SQL Queries</name>
+            <description>Structured Query Language - SELECT, JOIN, subqueries</description>
+        </topic>
+        <topic id="T104" subjectId="SUB101">
+            <name>Transactions</name>
+            <description>ACID properties, concurrency control, recovery</description>
+        </topic>
+        <topic id="T105" subjectId="SUB101">
+            <name>Indexing</name>
+            <description>B-trees, hashing, index structures</description>
+        </topic>
+        <topic id="T106" subjectId="SUB101">
+            <name>Functional Dependency</name>
+            <description>Functional dependencies, closure, canonical cover</description>
+        </topic>
+        
+        <!-- DSA Topics -->
+        <topic id="T201" subjectId="SUB102">
+            <name>Arrays and Linked Lists</name>
+            <description>Linear data structures - arrays, singly/doubly linked lists</description>
+        </topic>
+        <topic id="T202" subjectId="SUB102">
+            <name>Trees and Graphs</name>
+            <description>Binary trees, BST, graph traversal (BFS, DFS)</description>
+        </topic>
+        <topic id="T203" subjectId="SUB102">
+            <name>Sorting Algorithms</name>
+            <description>Bubble, merge, quick, heap sort and their complexities</description>
+        </topic>
+        <topic id="T204" subjectId="SUB102">
+            <name>Dynamic Programming</name>
+            <description>Optimal substructure, overlapping subproblems, memoization</description>
+        </topic>
+        
+        <!-- OS Topics -->
+        <topic id="T301" subjectId="SUB103">
+            <name>Process Management</name>
+            <description>Process states, scheduling algorithms, context switching</description>
+        </topic>
+        <topic id="T302" subjectId="SUB103">
+            <name>Memory Management</name>
+            <description>Paging, segmentation, virtual memory</description>
+        </topic>
+        <topic id="T303" subjectId="SUB103">
+            <name>Deadlocks</name>
+            <description>Deadlock prevention, avoidance, detection, recovery</description>
+        </topic>
+        
+        <!-- CN Topics -->
+        <topic id="T401" subjectId="SUB104">
+            <name>OSI Model</name>
+            <description>Seven layers of the OSI reference model</description>
+        </topic>
+        <topic id="T402" subjectId="SUB104">
+            <name>TCP/IP Protocol</name>
+            <description>TCP, UDP, IP addressing, routing protocols</description>
+        </topic>
+        
+        <!-- DSP Topics -->
+        <topic id="T501" subjectId="SUB105">
+            <name>Fourier Transform</name>
+            <description>DFT, FFT, frequency domain analysis</description>
+        </topic>
+    </topics>
+
+    <!-- ======================== -->
+    <!-- NOTES                    -->
+    <!-- ======================== -->
+    <notes>
+        <note id="N101" uploaderId="S101" topicId="T101" subjectId="SUB101">
+            <title>DBMS Normalization Notes</title>
+            <description>Complete guide to database normalization - 1NF, 2NF, 3NF and BCNF with examples</description>
+            <tags>DBMS,Normalization,Database,Normal Forms</tags>
+            <fileUrl>/uploads/normalization.pdf</fileUrl>
+        </note>
+        <note id="N102" uploaderId="S101" topicId="T106" subjectId="SUB101">
+            <title>Functional Dependency Explained</title>
+            <description>Understanding functional dependencies, Armstrong's axioms, and closure of attributes</description>
+            <tags>DBMS,Functional Dependency,FD,Armstrong</tags>
+            <fileUrl>/uploads/functional_dependency.pdf</fileUrl>
+        </note>
+        <note id="N103" uploaderId="S102" topicId="T102" subjectId="SUB101">
+            <title>ER Diagrams - Complete Guide</title>
+            <description>How to draw ER diagrams, entities, attributes, relationships, cardinality</description>
+            <tags>DBMS,ER Model,ER Diagram,Entity Relationship</tags>
+            <fileUrl>/uploads/er_diagrams.pdf</fileUrl>
+        </note>
+        <note id="N104" uploaderId="S102" topicId="T103" subjectId="SUB101">
+            <title>SQL Queries Cheat Sheet</title>
+            <description>All important SQL queries - SELECT, JOIN, GROUP BY, HAVING, subqueries with examples</description>
+            <tags>SQL,Queries,Database,DBMS,Joins</tags>
+            <fileUrl>/uploads/sql_cheatsheet.pdf</fileUrl>
+        </note>
+        <note id="N105" uploaderId="S103" topicId="T104" subjectId="SUB101">
+            <title>Transaction Management Notes</title>
+            <description>ACID properties, serializability, two-phase locking, timestamp ordering</description>
+            <tags>DBMS,Transactions,ACID,Concurrency</tags>
+            <fileUrl>/uploads/transactions.pdf</fileUrl>
+        </note>
+        <note id="N106" uploaderId="S103" topicId="T105" subjectId="SUB101">
+            <title>Indexing and B-Trees</title>
+            <description>Database indexing structures - B-tree, B+ tree, hashing, bitmap indexes</description>
+            <tags>DBMS,Indexing,B-Tree,Hashing</tags>
+            <fileUrl>/uploads/indexing.pdf</fileUrl>
+        </note>
+        <note id="N107" uploaderId="S101" topicId="T201" subjectId="SUB102">
+            <title>Arrays and Linked Lists Basics</title>
+            <description>Introduction to arrays, singly linked lists, doubly linked lists with C code</description>
+            <tags>DSA,Arrays,Linked List,Data Structures</tags>
+            <fileUrl>/uploads/arrays_linkedlists.pdf</fileUrl>
+        </note>
+        <note id="N108" uploaderId="S102" topicId="T202" subjectId="SUB102">
+            <title>Trees and Graph Traversal</title>
+            <description>Binary trees, BST operations, BFS and DFS traversal with examples</description>
+            <tags>DSA,Trees,Graphs,BFS,DFS</tags>
+            <fileUrl>/uploads/trees_graphs.pdf</fileUrl>
+        </note>
+        <note id="N109" uploaderId="S103" topicId="T203" subjectId="SUB102">
+            <title>Sorting Algorithms Comparison</title>
+            <description>Visual comparison of sorting algorithms - bubble, selection, merge, quick sort</description>
+            <tags>DSA,Sorting,Algorithms,Complexity</tags>
+            <fileUrl>/uploads/sorting.pdf</fileUrl>
+        </note>
+        <note id="N110" uploaderId="S105" topicId="T204" subjectId="SUB102">
+            <title>Dynamic Programming Patterns</title>
+            <description>Common DP patterns - knapsack, LCS, matrix chain multiplication</description>
+            <tags>DSA,Dynamic Programming,DP,Algorithms</tags>
+            <fileUrl>/uploads/dynamic_programming.pdf</fileUrl>
+        </note>
+        <note id="N111" uploaderId="S105" topicId="T301" subjectId="SUB103">
+            <title>Process Scheduling Algorithms</title>
+            <description>FCFS, SJF, Priority, Round Robin scheduling with Gantt charts</description>
+            <tags>OS,Process,Scheduling,CPU</tags>
+            <fileUrl>/uploads/process_scheduling.pdf</fileUrl>
+        </note>
+        <note id="N112" uploaderId="S104" topicId="T302" subjectId="SUB103">
+            <title>Virtual Memory and Paging</title>
+            <description>Page tables, TLB, page replacement algorithms - FIFO, LRU, Optimal</description>
+            <tags>OS,Memory,Paging,Virtual Memory</tags>
+            <fileUrl>/uploads/virtual_memory.pdf</fileUrl>
+        </note>
+        <note id="N113" uploaderId="S105" topicId="T303" subjectId="SUB103">
+            <title>Deadlock Detection and Prevention</title>
+            <description>Deadlock conditions, resource allocation graph, banker's algorithm</description>
+            <tags>OS,Deadlock,Prevention,Banker</tags>
+            <fileUrl>/uploads/deadlocks.pdf</fileUrl>
+        </note>
+        <note id="N114" uploaderId="S104" topicId="T401" subjectId="SUB104">
+            <title>OSI Model - All 7 Layers</title>
+            <description>Detailed explanation of each OSI layer with protocols and examples</description>
+            <tags>Networks,OSI,Layers,Protocols</tags>
+            <fileUrl>/uploads/osi_model.pdf</fileUrl>
+        </note>
+        <note id="N115" uploaderId="S104" topicId="T501" subjectId="SUB105">
+            <title>Fourier Transform Basics</title>
+            <description>DFT, FFT algorithms, frequency domain analysis with solved examples</description>
+            <tags>DSP,Fourier,FFT,Signal Processing</tags>
+            <fileUrl>/uploads/fourier_transform.pdf</fileUrl>
+        </note>
+    </notes>
+
+    <!-- ======================== -->
+    <!-- RELATIONSHIPS            -->
+    <!-- These define graph connections for Neo4j -->
+    <!-- ======================== -->
+    <relationships>
+        <!-- Prerequisite relationships: Topic A must be learned before Topic B -->
+        <prerequisite fromTopicId="T106" toTopicId="T101">Functional Dependency before Normalization</prerequisite>
+        <prerequisite fromTopicId="T102" toTopicId="T103">ER Model before SQL Queries</prerequisite>
+        <prerequisite fromTopicId="T103" toTopicId="T104">SQL before Transactions</prerequisite>
+        <prerequisite fromTopicId="T101" toTopicId="T105">Normalization before Indexing</prerequisite>
+        <prerequisite fromTopicId="T201" toTopicId="T202">Arrays before Trees</prerequisite>
+        <prerequisite fromTopicId="T202" toTopicId="T203">Trees before Sorting</prerequisite>
+        <prerequisite fromTopicId="T203" toTopicId="T204">Sorting before DP</prerequisite>
+        <prerequisite fromTopicId="T301" toTopicId="T303">Process Management before Deadlocks</prerequisite>
+        <prerequisite fromTopicId="T301" toTopicId="T302">Process Management before Memory Management</prerequisite>
+        <prerequisite fromTopicId="T401" toTopicId="T402">OSI Model before TCP/IP</prerequisite>
+
+        <!-- Related notes (content similarity) -->
+        <relatedNote fromNoteId="N101" toNoteId="N102">Both about database design theory</relatedNote>
+        <relatedNote fromNoteId="N102" toNoteId="N103">FD relates to ER modeling</relatedNote>
+        <relatedNote fromNoteId="N103" toNoteId="N104">ER to SQL mapping</relatedNote>
+        <relatedNote fromNoteId="N104" toNoteId="N105">SQL and transactions</relatedNote>
+        <relatedNote fromNoteId="N105" toNoteId="N106">Transactions use indexes</relatedNote>
+        <relatedNote fromNoteId="N101" toNoteId="N106">Normalization and indexing</relatedNote>
+        <relatedNote fromNoteId="N107" toNoteId="N108">Linear to non-linear structures</relatedNote>
+        <relatedNote fromNoteId="N108" toNoteId="N109">Trees used in sorting</relatedNote>
+        <relatedNote fromNoteId="N109" toNoteId="N110">Sorting leads to DP</relatedNote>
+        <relatedNote fromNoteId="N111" toNoteId="N113">Process issues cause deadlocks</relatedNote>
+        <relatedNote fromNoteId="N111" toNoteId="N112">Process and memory management</relatedNote>
+
+        <!-- Student follows relationships -->
+        <follows fromStudentId="S101" toStudentId="S102">Arun follows Priya</follows>
+        <follows fromStudentId="S101" toStudentId="S103">Arun follows Rahul</follows>
+        <follows fromStudentId="S102" toStudentId="S101">Priya follows Arun</follows>
+        <follows fromStudentId="S102" toStudentId="S105">Priya follows Vikram</follows>
+        <follows fromStudentId="S103" toStudentId="S101">Rahul follows Arun</follows>
+        <follows fromStudentId="S104" toStudentId="S102">Sneha follows Priya</follows>
+        <follows fromStudentId="S105" toStudentId="S101">Vikram follows Arun</follows>
+        <follows fromStudentId="S105" toStudentId="S103">Vikram follows Rahul</follows>
+
+        <!-- Student studies topics -->
+        <studies studentId="S101" topicId="T101"/>
+        <studies studentId="S101" topicId="T102"/>
+        <studies studentId="S101" topicId="T106"/>
+        <studies studentId="S101" topicId="T201"/>
+        <studies studentId="S102" topicId="T102"/>
+        <studies studentId="S102" topicId="T103"/>
+        <studies studentId="S102" topicId="T202"/>
+        <studies studentId="S103" topicId="T104"/>
+        <studies studentId="S103" topicId="T203"/>
+        <studies studentId="S103" topicId="T201"/>
+        <studies studentId="S104" topicId="T302"/>
+        <studies studentId="S104" topicId="T401"/>
+        <studies studentId="S104" topicId="T501"/>
+        <studies studentId="S105" topicId="T204"/>
+        <studies studentId="S105" topicId="T301"/>
+        <studies studentId="S105" topicId="T303"/>
+
+        <!-- Student liked notes -->
+        <liked studentId="S101" noteId="N103"/>
+        <liked studentId="S101" noteId="N104"/>
+        <liked studentId="S101" noteId="N108"/>
+        <liked studentId="S102" noteId="N101"/>
+        <liked studentId="S102" noteId="N102"/>
+        <liked studentId="S102" noteId="N107"/>
+        <liked studentId="S103" noteId="N101"/>
+        <liked studentId="S103" noteId="N108"/>
+        <liked studentId="S104" noteId="N111"/>
+        <liked studentId="S104" noteId="N113"/>
+        <liked studentId="S105" noteId="N101"/>
+        <liked studentId="S105" noteId="N109"/>
+
+        <!-- Student bookmarked notes -->
+        <bookmarked studentId="S101" noteId="N101"/>
+        <bookmarked studentId="S101" noteId="N102"/>
+        <bookmarked studentId="S101" noteId="N107"/>
+        <bookmarked studentId="S102" noteId="N103"/>
+        <bookmarked studentId="S102" noteId="N104"/>
+        <bookmarked studentId="S103" noteId="N105"/>
+        <bookmarked studentId="S103" noteId="N109"/>
+        <bookmarked studentId="S104" noteId="N112"/>
+        <bookmarked studentId="S104" noteId="N114"/>
+        <bookmarked studentId="S105" noteId="N110"/>
+        <bookmarked studentId="S105" noteId="N111"/>
+    </relationships>
+</lms>
