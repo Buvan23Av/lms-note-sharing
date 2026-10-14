@@ -9,12 +9,12 @@ export default defineConfig({
     proxy: {
       // Proxy API requests to FastAPI backend running on port 8000
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'http://127.0.0.1:8000',
         changeOrigin: true
       },
       // Proxy static upload files to FastAPI backend
       '/uploads': {
-        target: 'http://localhost:8000',
+        target: 'http://127.0.0.1:8000',
         changeOrigin: true
       }
     }
